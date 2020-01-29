@@ -67,3 +67,4 @@ buttonAddEl.onclick = (evt) => {
         }
     }
 }
+// git subtree push --prefix src origin gh-pages
