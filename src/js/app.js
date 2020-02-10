@@ -32,7 +32,10 @@ buttonAddEl.onclick = (evt) => {
     const purchasesEl = document.createElement('li');
 
     purchasesEl.innerHTML = `
-    Попукпа на сумму ${value}, в категрии ${category} <button data-action="up">☝️</button> <button data-action="down">👇</button> <button data-action="remove">❌</button>
+    Попукпа на сумму ${value}, в категрии ${category} 
+    <button data-action="up">☝️</button> 
+    <button data-action="down">👇</button> 
+    <button data-action="remove">❌</button>
     `;
 
     const purchasesRemove = purchasesEl.querySelector('[data-action=remove]')
