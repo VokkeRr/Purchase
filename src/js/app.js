@@ -56,18 +56,18 @@ buttonAddEl.onclick = (evt) => {
 
     buttonUp.onclick = () => {
         if (purchasesEl == purchasesListEl.firstElementChild) {
-            purchasesListEl.insertBefore(purchasesEl, null)
-        } else {
-            purchasesListEl.insertBefore(purchasesEl, purchasesEl.previousElementSibling)
-        }
+            purchasesListEl.insertBefore(purchasesEl, null);
+            return;
+        } 
+        purchasesListEl.insertBefore(purchasesEl, purchasesEl.previousElementSibling);
     }
 
     buttonDown.onclick = () => {
         if (purchasesEl === purchasesListEl.lastElementChild) {
-            purchasesListEl.insertBefore(purchasesEl, purchasesListEl.firstElementChild)
-        } else {
-            purchasesListEl.insertBefore(purchasesEl.nextElementSibling, purchasesEl)
+            purchasesListEl.insertBefore(purchasesEl, purchasesListEl.firstElementChild);
+            return;
         }
+        purchasesListEl.insertBefore(purchasesEl.nextElementSibling, purchasesEl);
     }
 }
 // git subtree push --prefix src origin gh-pages
